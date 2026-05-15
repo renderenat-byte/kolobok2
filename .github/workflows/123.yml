@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "Keeping workflow alive..."
           while screen -list | grep -q x86_session; do
-            sleep 60
+            sleep 2
             echo "Screen session still running..."
           done
           echo "Screen session ended"
